@@ -16,6 +16,6 @@ test('it renders list of the episodes', () => {
 	expect(allEpisodes).toHaveLength(0);
 
 	rerender(<Episodes episodes={mockEpisode} />);
-	allEpisodes = queryAllByText(/Season/i);
+	allEpisodes = queryAllByText(/season/i);
 	expect(allEpisodes).toHaveLength(1);
 });
